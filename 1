@@ -1,0 +1,21 @@
+def sum(first_number, second_number, third_number):
+    if type(first_number)==int and type(second_number)==int and type(third_number) == int:
+        return first_number+second_number+third_number
+    else:
+        pass
+
+print(sum(1,2,3))
+print(sum("jsjfks", 2,3))
+
+def palindrom(word_5_letters):
+    if word_5_letters == word_5_letters[-1]+ word_5_letters[-2]+word_5_letters[-3]+word_5_letters[-4]+word_5_letters[-5]:
+        return True
+print(palindrom("asdsa"))
+print(palindrom("asdsh"))
+
+def bez_probelov(stroka):
+    for i in range(len(stroka)):
+        if stroka[i]==' ':
+            new_stroka=stroka[:i]+stroka[i+1:]
+    return new_stroka
+print(bez_probelov("stroka probel"))
